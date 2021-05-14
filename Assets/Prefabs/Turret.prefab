@@ -105,14 +105,45 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5839355030242592091}
-  m_LocalRotation: {x: -0, y: 0.9999988, z: -0, w: 0.0015944839}
+  m_LocalRotation: {x: -0, y: 0.70823336, z: -0, w: -0.70597845}
   m_LocalPosition: {x: -0.01, y: 0.71, z: -0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 977813718340979583}
+  - {fileID: 261429272525699246}
   m_Father: {fileID: 7217860740682974187}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 179.817, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 269.81702, z: 0}
+--- !u!1 &6153616643226381159
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 261429272525699246}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &261429272525699246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6153616643226381159}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.624, z: 2.788}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1452353207621234138}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7968173342087595590
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,6 +236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7217860740682974187}
+  - component: {fileID: 635894718}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -228,3 +260,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &635894718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8025747372654319953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 135945af387782545baa3693e288b7ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 15
+  fireRate: 1
+  enemyTag: Enemy
+  partToRotate: {fileID: 1452353207621234138}
+  turnSpeed: 10
+  bulletPrefab: {fileID: 4276960440648354211, guid: 335fe1333d97dbc4ea92398d1b93598b, type: 3}
+  firePoint: {fileID: 261429272525699246}
