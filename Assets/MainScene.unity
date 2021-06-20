@@ -3692,6 +3692,7 @@ GameObject:
   - component: {fileID: 539369983}
   - component: {fileID: 539369982}
   - component: {fileID: 539369984}
+  - component: {fileID: 539369985}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -3746,7 +3747,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 8025747372654319953, guid: b8fa249e7dafa7d4580da21df2f524ae, type: 3}
-  missileLauncherPrefab: {fileID: 727101127336387409, guid: 0c24334dbb6c1d54196d5566b18946d0, type: 3}
+  missileLauncherPrefab: {fileID: 564698786232824461, guid: 0c24334dbb6c1d54196d5566b18946d0, type: 3}
+--- !u!114 &539369985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539369981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d769989cd028ccc4b9c8e005d7747913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &544734083
 PrefabInstance:
   m_ObjectHideFlags: 0
